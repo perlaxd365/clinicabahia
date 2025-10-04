@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Index - Medilab Bootstrap Template</title>
+    <title>Clinica Bahia - Chimbote</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
     <!-- Favicons -->
-    <link href="{{asset('img/favicon.png')}}" rel="icon">
+    <link href="{{asset('img/logo.png')}}" rel="icon">
     <link href="{{asset('img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
     <!-- Fonts -->
@@ -24,6 +24,7 @@
     <link href="{{asset('vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
     <link href="{{asset('vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
     <link href="{{asset('vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Main CSS File -->
     <link href="{{asset('css/main.css')}}" rel="stylesheet">
@@ -36,6 +37,14 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+<!-- Modal -->
+<div class="modal-overlay" id="anuncioModal">
+    <div class="modal-content">
+        <h2>✨ Promoción Especial ✨</h2>
+        <p>Obtén un 20% de descuento en tu primer tratamiento de estética.</p>
+        <button id="cerrarModal">Cerrar</button>
+    </div>
+</div>
 
 <body class="index-page">
 
@@ -44,8 +53,8 @@
         <div class="topbar d-flex align-items-center">
             <div class="container d-flex justify-content-center justify-content-md-between">
                 <div class="contact-info d-flex align-items-center">
-                    <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-                    <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+                    <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">adm.clinicabahia@gmail.com</a></i>
+                    <i class="bi bi-phone d-flex align-items-center ms-4"><span>+51 905 431 945</span></i>
                 </div>
                 <div class="social-links d-none d-md-flex align-items-center">
                     <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
@@ -62,16 +71,21 @@
                 <a href="index.html" class="logo d-flex align-items-center me-auto">
                     <!-- Uncomment the line below if you also wish to use an image logo -->
                     <img src="{{asset('img/logo.png')}}" alt="">
-                    <h1 class="sitename">Clínica Bahía</h1>
+                    <div class="bloque-texto">
+                        <h3 class="mb-1">Clinica Bahía</h3>
+                        <div class="linea"></div>
+                        <p>Nuevo Chimbote</p>
+                    </div>
+
                 </a>
 
                 <nav id="navmenu" class="navmenu">
                     <ul>
-                        <li><a href="#hero" class="active">Home<br></a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#departments">Departments</a></li>
-                        <li><a href="#doctors">Doctors</a></li>
+                        <li><a href="#hero" class="active">Inicio<br></a></li>
+                        <li><a href="#about">Quienes Somos</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#departments">Especialidades</a></li>
+                        <li><a href="#doctors">Staff Médico</a></li>
                         <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                             <ul>
                                 <li><a href="#">Dropdown 1</a></li>
@@ -89,12 +103,12 @@
                                 <li><a href="#">Dropdown 4</a></li>
                             </ul>
                         </li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#contact">Contacto</a></li>
                     </ul>
                     <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
                 </nav>
 
-                <a class="cta-btn d-none d-sm-block" href="#appointment">Make an Appointment</a>
+                <a class="cta-btn d-none d-sm-block" href="#appointment">Acceso a pacientes</a>
 
             </div>
 
@@ -104,11 +118,13 @@
 
     <main class="main">
 
-<script>var myCarousel = document.querySelector('#myCarousel')
-var carousel = new bootstrap.Carousel(myCarousel, {
-  interval: 2000,
-  wrap: false
-})</script>
+        <script>
+            var myCarousel = document.querySelector('#myCarousel')
+            var carousel = new bootstrap.Carousel(myCarousel, {
+                interval: 2000,
+                wrap: false
+            })
+        </script>
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -116,7 +132,7 @@ var carousel = new bootstrap.Carousel(myCarousel, {
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active" >
+                <div class="carousel-item active">
 
                     <img src="{{asset('img/hero-bg.jpg')}}" alt="" data-aos="fade-in">
                     <div class="carousel-caption d-none d-md-block">
@@ -131,7 +147,7 @@ var carousel = new bootstrap.Carousel(myCarousel, {
                         <p>Some representative placeholder content for the second slide.</p>
                     </div>
                 </div>
-                    <div class="carousel-item" data-bs-interval="3000">
+                <div class="carousel-item" data-bs-interval="3000">
                     <img src="{{asset('img/hero-bg.jpg')}}" alt="" data-aos="fade-in">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Third slide label</h5>
@@ -143,14 +159,14 @@ var carousel = new bootstrap.Carousel(myCarousel, {
 
                     <div class="container position-relative">
 
-                        <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
-                            <h2>WELCOME TO MEDILAB</h2>
-                            <p>We are team of talented designers making websites with Bootstrap</p>
+                        <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="500">
+                            <h2>Bienvenidos a la Cínica Bahía</h2>
+                            <p>Con nostros tu salud será</p>
                         </div><!-- End Welcome -->
 
                         <div class="content row gy-4">
                             <div class="col-lg-4 d-flex align-items-stretch">
-                                <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
+                                <div class="why-box" data-aos="zoom-out" data-aos-delay="1000">
                                     <h3>Why Choose Medilab?</h3>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
@@ -167,7 +183,7 @@ var carousel = new bootstrap.Carousel(myCarousel, {
                                     <div class="row gy-4">
 
                                         <div class="col-xl-4 d-flex align-items-stretch">
-                                            <div class="icon-box" data-aos="zoom-out" data-aos-delay="300">
+                                            <div class="icon-box" data-aos="zoom-out" data-aos-delay="1500">
                                                 <i class="bi bi-clipboard-data"></i>
                                                 <h4>Corporis voluptates officia eiusmod</h4>
                                                 <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
@@ -175,7 +191,7 @@ var carousel = new bootstrap.Carousel(myCarousel, {
                                         </div><!-- End Icon Box -->
 
                                         <div class="col-xl-4 d-flex align-items-stretch">
-                                            <div class="icon-box" data-aos="zoom-out" data-aos-delay="400">
+                                            <div class="icon-box" data-aos="zoom-out" data-aos-delay="1700">
                                                 <i class="bi bi-gem"></i>
                                                 <h4>Ullamco laboris ladore pan</h4>
                                                 <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
@@ -183,7 +199,7 @@ var carousel = new bootstrap.Carousel(myCarousel, {
                                         </div><!-- End Icon Box -->
 
                                         <div class="col-xl-4 d-flex align-items-stretch">
-                                            <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
+                                            <div class="icon-box" data-aos="zoom-out" data-aos-delay="1800">
                                                 <i class="bi bi-inboxes"></i>
                                                 <h4>Labore consequatur incidid dolore</h4>
                                                 <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
@@ -1111,11 +1127,15 @@ var carousel = new bootstrap.Carousel(myCarousel, {
                 <!-- You can delete the links only if you've purchased the pro version. -->
                 <!-- Licensing information: https://bootstrapmade.com/license/ -->
                 <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon
             </div>
         </div>
 
     </footer>
+
+    <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+
 
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
