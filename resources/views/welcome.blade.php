@@ -162,7 +162,7 @@
                     <div class="container position-relative">
 
                         <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="500">
-                            <h2>Bienvenidos a la Cínica Bahía</h2>
+                            <h2>Bienvenidos a la Cínica Bahía de nuevo chimbote<h2>
                             <p>Tu bienestar es nuestra labor.</p>
                         </div><!-- End Welcome -->
 
@@ -239,7 +239,7 @@
                     </div>
 
                     <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-                        <h3>About Us</h3>
+                        <h3>¿Quienes somos?</h3>
                         <p>
                             Dolor iure expedita id fuga asperiores qui sunt consequatur minima. Quidem voluptas deleniti. Sit quia molestiae quia quas qui magnam itaque veritatis dolores. Corrupti totam ut eius incidunt reiciendis veritatis asperiores placeat.
                         </p>
@@ -293,7 +293,7 @@
                         <i class="fa-regular fa-hospital"></i>
                         <div class="stats-item">
                             <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1" class="purecounter"></span>
-                            <p>Departments</p>
+                            <p>Departmento</p>
                         </div>
                     </div><!-- End Stats Item -->
 

@@ -967,8 +967,6 @@ section,
 }
 
 .hero .content .why-box .more-btn:hover {
-  background: var(--surface-color);
-  color: var(--accent-color);
 }
 
 .hero .content .icon-box {
