@@ -41,6 +41,8 @@
 <div class="modal-overlay" id="anuncioModal">
     <div class="modal-content">
         <h2>✨ Promoción Especial ✨</h2>
+        <img src="{{asset('img/promociones/oferta_laboral.jpg')}}" alt="">
+        <hr>
         <p>Obtén un 20% de descuento en tu primer tratamiento de estética.</p>
         <button id="cerrarModal">Cerrar</button>
     </div>
@@ -134,21 +136,21 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
 
-                    <img src="{{asset('img/hero-bg.jpg')}}" alt="" data-aos="fade-in">
+                    <img src="{{asset('img/portada/portada1.jpg')}}" alt="" data-aos="fade-in">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>First slide label</h5>
                         <p>Some representative placeholder content for the first slide.</p>
                     </div>
                 </div>
                 <div class="carousel-item " data-bs-interval="3000">
-                    <img src="{{asset('img/hero-bg.jpg')}}" alt="" data-aos="fade-in">
+                    <img src="{{asset('img/portada/portada2.jpg')}}" alt="" data-aos="fade-in">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Second slide label</h5>
                         <p>Some representative placeholder content for the second slide.</p>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                    <img src="{{asset('img/hero-bg.jpg')}}" alt="" data-aos="fade-in">
+                    <img src="{{asset('img/portada/portada3.jpg')}}" alt="" data-aos="fade-in">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Third slide label</h5>
                         <p>Some representative placeholder content for the third slide.</p>
@@ -161,16 +163,15 @@
 
                         <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="500">
                             <h2>Bienvenidos a la Cínica Bahía</h2>
-                            <p>Con nostros tu salud será</p>
+                            <p>Tu bienestar es nuestra labor.</p>
                         </div><!-- End Welcome -->
 
                         <div class="content row gy-4">
                             <div class="col-lg-4 d-flex align-items-stretch">
                                 <div class="why-box" data-aos="zoom-out" data-aos-delay="1000">
-                                    <h3>Why Choose Medilab?</h3>
+                                    <h3>Bienvenidos</h3>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                                        Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+                                        Contamos con más de 20 especialidades médicas a cargo de un staff de especialistas con trayectoria internacional, dedicados a brindarte una atención médica de la más alta calidad y calidez.
                                     </p>
                                     <div class="text-center">
                                         <a href="#about" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
@@ -184,25 +185,25 @@
 
                                         <div class="col-xl-4 d-flex align-items-stretch">
                                             <div class="icon-box" data-aos="zoom-out" data-aos-delay="1500">
-                                                <i class="bi bi-clipboard-data"></i>
-                                                <h4>Corporis voluptates officia eiusmod</h4>
-                                                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                                                <i class="bi bi-capsule"></i>
+                                                <h4>Diagnóstico Profesional</h4>
+                                                <p>La medicina que ofrecemos se llama: ciencia, experiencia y trato humano.</p>
                                             </div>
                                         </div><!-- End Icon Box -->
 
                                         <div class="col-xl-4 d-flex align-items-stretch">
                                             <div class="icon-box" data-aos="zoom-out" data-aos-delay="1700">
-                                                <i class="bi bi-gem"></i>
-                                                <h4>Ullamco laboris ladore pan</h4>
-                                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                                                <i class="bi bi-heart-pulse-fill"></i>
+                                                <h4>Curar es un arte</h4>
+                                                <p>Ciencia en la mente, corazón en cada consulta. La medicina que te entiende.</p>
                                             </div>
                                         </div><!-- End Icon Box -->
 
                                         <div class="col-xl-4 d-flex align-items-stretch">
-                                            <div class="icon-box" data-aos="zoom-out" data-aos-delay="1800">
-                                                <i class="bi bi-inboxes"></i>
-                                                <h4>Labore consequatur incidid dolore</h4>
-                                                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                                            <div class="icon-box" data-aos="fade-left"  data-aos-delay="1800">
+                                                <i class="bi bi-clipboard2-pulse-fill"></i>
+                                                <h4>Tratamientos Especializados</h4>
+                                                <p>Más que una consulta, es el inicio de tu bienestar.</p>
                                             </div>
                                         </div><!-- End Icon Box -->
 
