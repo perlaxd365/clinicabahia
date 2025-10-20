@@ -41,7 +41,7 @@
 <div class="modal-overlay" id="anuncioModal">
     <div class="modal-content">
         <h2>✨ Promoción Especial ✨</h2>
-        <img src="{{asset('img/promociones/oferta_laboral.jpg')}}" alt="">
+        <img src="{{asset('img/promociones/oferta_laboral.png')}}" alt="">
         <hr>
         <p>Obtén un 20% de descuento en tu primer tratamiento de estética.</p>
         <button id="cerrarModal">Cerrar</button>
@@ -136,24 +136,24 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
 
-                    <img src="{{asset('img/portada/portada1.jpg')}}" alt="" data-aos="fade-in">
+                    <img src="{{asset('img/portada/portada1.png')}}" class="img-fluid" style="height: auto; background-size: cover" alt="" data-aos="fade-in">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <h5>Profesionales</h5>
+                        <p>Cuidamos tu salud con compromiso y experiencia.</p>
                     </div>
                 </div>
                 <div class="carousel-item " data-bs-interval="3000">
-                    <img src="{{asset('img/portada/portada2.jpg')}}" alt="" data-aos="fade-in">
+                    <img src="{{asset('img/portada/portada2.png')}}" class="img-fluid" style="height: auto; background-size: cover" alt="" data-aos="fade-in">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
+                        <h5>Diagnóstico preciso</h5>
+                        <p>Chequeos completos, atención confiable.</p>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                    <img src="{{asset('img/portada/portada3.jpg')}}" alt="" data-aos="fade-in">
+                    <img src="{{asset('img/portada/portada3.jpg')}}" class="img-fluid" style="height: auto; background-size: cover" alt="" data-aos="fade-in">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
+                        <h5>Innovación y humanidad</h5>
+                        <p>Salud para hoy, bienestar para siempre.</p>
                     </div>
                 </div> <!-- Hero Section -->
                 <section id="hero" class="hero section light-background">
@@ -161,9 +161,10 @@
 
                     <div class="container position-relative">
 
-                        <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="500">
-                            <h2>Bienvenidos a la Cínica Bahía</h2>
-                            <p>Tu bienestar es nuestra labor.</p>
+                        <div class="welcome position-relative blur-bg col-sm-6" data-aos="fade-down" data-aos-delay="500">
+                            <h4>Bienvenidos a la Cínica Bahía</h4>
+                            <p style="color: #3f3939ff;">Tu bienestar es nuestra labor.</p>
+                            
                         </div><!-- End Welcome -->
 
                         <div class="content row gy-4">
@@ -200,7 +201,7 @@
                                         </div><!-- End Icon Box -->
 
                                         <div class="col-xl-4 d-flex align-items-stretch">
-                                            <div class="icon-box" data-aos="fade-left"  data-aos-delay="1800">
+                                            <div class="icon-box" data-aos="fade-left" data-aos-delay="1800">
                                                 <i class="bi bi-clipboard2-pulse-fill"></i>
                                                 <h4>Tratamientos Especializados</h4>
                                                 <p>Más que una consulta, es el inicio de tu bienestar.</p>
@@ -234,35 +235,47 @@
                 <div class="row gy-4 gx-5">
 
                     <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
-                        <img src="{{asset('img/about.jpg')}}" class="img-fluid" alt="">
+                        <img src="{{asset('img/quienes_somos.png')}}" class="img-fluid" alt="">
                         <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
                     </div>
 
                     <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-                        <h3>About Us</h3>
+                        <h3>Quienes somos</h3>
                         <p>
-                            Dolor iure expedita id fuga asperiores qui sunt consequatur minima. Quidem voluptas deleniti. Sit quia molestiae quia quas qui magnam itaque veritatis dolores. Corrupti totam ut eius incidunt reiciendis veritatis asperiores placeat.
+                            En <b>Clínica Bahía</b> brindamos atención médica integral con un equipo de profesionales comprometidos con la salud y el bienestar de nuestros pacientes.
+                            Nuestro objetivo es ofrecer servicios de calidad, diagnósticos precisos y tratamientos oportunos en un ambiente seguro, humano y confiable.
                         </p>
                         <ul>
                             <li>
+                                <i class="fa-solid fa-house-medical"></i>
+                                <div>
+                                    <h5>Brindamos atención médica y de enfermería a domicilio</h5>
+                                    <p>
+                                        🩺 Atención médica y de enfermería en casa.<br>
+                                        🏠 Comodidad, confianza y cuidado profesional.<br>
+                                        💻 Seguimiento digital de tus atenciones.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
                                 <i class="fa-solid fa-vial-circle-check"></i>
                                 <div>
-                                    <h5>Ullamco laboris nisi ut aliquip consequat</h5>
-                                    <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                                    <h5>Laboratorios de ultima generación</h5>
+                                    <p>
+                                        🩸 Atención sin cita previa. <br>
+                                        🔬 Resultados disponibles en línea. <br>
+                                        👩‍⚕️ Personal altamente calificado.</p>
                                 </div>
                             </li>
                             <li>
-                                <i class="fa-solid fa-pump-medical"></i>
+                                <i class="fa-solid fa-truck-medical"></i>
                                 <div>
-                                    <h5>Magnam soluta odio exercitationem reprehenderi</h5>
-                                    <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-heart-circle-xmark"></i>
-                                <div>
-                                    <h5>Voluptatem et qui exercitationem</h5>
-                                    <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p>
+                                    <h5>Servicio de movilidad especializado</h5>
+                                    <p>
+                                        🚐 Traslados médicos seguros y cómodos.<br>
+                                        🏥 Movilidad con asistencia profesional.<br>
+                                        ⏱️ Puntualidad, seguridad y confianza en cada viaje.
+                                    </p>
                                 </div>
                             </li>
                         </ul>
@@ -332,7 +345,7 @@
 
                 <div class="row gy-4">
 
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="service-item  position-relative">
                             <div class="icon">
                                 <i class="fas fa-heartbeat"></i>
@@ -344,7 +357,7 @@
                         </div>
                     </div><!-- End Service Item -->
 
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="service-item position-relative">
                             <div class="icon">
                                 <i class="fas fa-pills"></i>
@@ -356,7 +369,7 @@
                         </div>
                     </div><!-- End Service Item -->
 
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="service-item position-relative">
                             <div class="icon">
                                 <i class="fas fa-hospital-user"></i>
@@ -368,7 +381,7 @@
                         </div>
                     </div><!-- End Service Item -->
 
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
                         <div class="service-item position-relative">
                             <div class="icon">
                                 <i class="fas fa-dna"></i>
@@ -381,7 +394,7 @@
                         </div>
                     </div><!-- End Service Item -->
 
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
                         <div class="service-item position-relative">
                             <div class="icon">
                                 <i class="fas fa-wheelchair"></i>
@@ -394,7 +407,7 @@
                         </div>
                     </div><!-- End Service Item -->
 
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="600">
                         <div class="service-item position-relative">
                             <div class="icon">
                                 <i class="fas fa-notes-medical"></i>
@@ -414,64 +427,8 @@
         </section><!-- /Services Section -->
 
         <!-- Appointment Section -->
-        <section id="appointment" class="appointment section">
 
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Appointment</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-            </div><!-- End Section Title -->
-
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-                <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
-                    <div class="row">
-                        <div class="col-md-4 form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
-                        </div>
-                        <div class="col-md-4 form-group mt-3 mt-md-0">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
-                        </div>
-                        <div class="col-md-4 form-group mt-3 mt-md-0">
-                            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" required="">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 form-group mt-3">
-                            <input type="datetime-local" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" required="">
-                        </div>
-                        <div class="col-md-4 form-group mt-3">
-                            <select name="department" id="department" class="form-select" required="">
-                                <option value="">Select Department</option>
-                                <option value="Department 1">Department 1</option>
-                                <option value="Department 2">Department 2</option>
-                                <option value="Department 3">Department 3</option>
-                            </select>
-                        </div>
-                        <div class="col-md-4 form-group mt-3">
-                            <select name="doctor" id="doctor" class="form-select" required="">
-                                <option value="">Select Doctor</option>
-                                <option value="Doctor 1">Doctor 1</option>
-                                <option value="Doctor 2">Doctor 2</option>
-                                <option value="Doctor 3">Doctor 3</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="form-group mt-3">
-                        <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
-                    </div>
-                    <div class="mt-3">
-                        <div class="loading">Loading</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
-                        <div class="text-center"><button type="submit">Make an Appointment</button></div>
-                    </div>
-                </form>
-
-            </div>
-
-        </section><!-- /Appointment Section -->
+        <!-- /Appointment Section -->
 
         <!-- Departments Section -->
         <section id="departments" class="departments section">
@@ -585,77 +542,187 @@
 
             <div class="container">
 
-                <div class="row gy-4">
+                <!-- inicio de transisicion -->
+                <div class="swiper init-swiper">
+                    <script type="application/json" class="swiper-config">
+                        {
+                            "loop": true,
+                            "speed": 600,
+                            "autoplay": {
+                                "delay": 5000
+                            },
+                            "slidesPerView": "auto",
+                            "pagination": {
+                                "el": ".swiper-pagination",
+                                "type": "bullets",
+                                "clickable": true
+                            }
+                        }
+                    </script>
+                    <div class="swiper-wrapper">
 
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="team-member d-flex align-items-start">
-                            <div class="pic"><img src="{{asset('img/doctors/doctors-1.jpg')}}" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>Walter White</h4>
-                                <span>Chief Medical Officer</span>
-                                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""> <i class="bi bi-linkedin"></i> </a>
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+
+                                <div class="row gy-4">
+
+                                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                                        <div class="team-member d-flex align-items-start">
+                                            <div class="pic"><img src="{{asset('img/doctors/doctors-1.jpg')}}" class="img-fluid" alt=""></div>
+                                            <div class="member-info">
+                                                <h4>Walter White</h4>
+                                                <span>Chief Medical Officer</span>
+                                                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                                                <div class="social">
+                                                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                                    <a href=""> <i class="bi bi-linkedin"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- End Team Member -->
+
+                                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                                        <div class="team-member d-flex align-items-start">
+                                            <div class="pic"><img src="{{asset('img/doctors/doctors-2.jpg')}}" class="img-fluid" alt=""></div>
+                                            <div class="member-info">
+                                                <h4>Sarah Jhonson</h4>
+                                                <span>Anesthesiologist</span>
+                                                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                                                <div class="social">
+                                                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                                    <a href=""> <i class="bi bi-linkedin"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- End Team Member -->
+
+                                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                                        <div class="team-member d-flex align-items-start">
+                                            <div class="pic"><img src="{{asset('img/doctors/doctors-3.jpg')}}" class="img-fluid" alt=""></div>
+                                            <div class="member-info">
+                                                <h4>William Anderson</h4>
+                                                <span>Cardiology</span>
+                                                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                                                <div class="social">
+                                                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                                    <a href=""> <i class="bi bi-linkedin"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- End Team Member -->
+
+                                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                                        <div class="team-member d-flex align-items-start">
+                                            <div class="pic"><img src="{{asset('img/doctors/doctors-4.jpg')}}" class="img-fluid" alt=""></div>
+                                            <div class="member-info">
+                                                <h4>Amanda Jepson</h4>
+                                                <span>Neurosurgeon</span>
+                                                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                                                <div class="social">
+                                                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                                    <a href=""> <i class="bi bi-linkedin"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- End Team Member -->
+
                                 </div>
-                            </div>
-                        </div>
-                    </div><!-- End Team Member -->
 
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="team-member d-flex align-items-start">
-                            <div class="pic"><img src="{{asset('img/doctors/doctors-2.jpg')}}" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>Sarah Jhonson</h4>
-                                <span>Anesthesiologist</span>
-                                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""> <i class="bi bi-linkedin"></i> </a>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+
+                                <div class="row gy-4">
+
+                                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                                        <div class="team-member d-flex align-items-start">
+                                            <div class="pic"><img src="{{asset('img/doctors/doctors-1.jpg')}}" class="img-fluid" alt=""></div>
+                                            <div class="member-info">
+                                                <h4>Walter White</h4>
+                                                <span>Chief Medical Officer</span>
+                                                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                                                <div class="social">
+                                                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                                    <a href=""> <i class="bi bi-linkedin"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- End Team Member -->
+
+                                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                                        <div class="team-member d-flex align-items-start">
+                                            <div class="pic"><img src="{{asset('img/doctors/doctors-2.jpg')}}" class="img-fluid" alt=""></div>
+                                            <div class="member-info">
+                                                <h4>Sarah Jhonson</h4>
+                                                <span>Anesthesiologist</span>
+                                                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                                                <div class="social">
+                                                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                                    <a href=""> <i class="bi bi-linkedin"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- End Team Member -->
+
+                                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                                        <div class="team-member d-flex align-items-start">
+                                            <div class="pic"><img src="{{asset('img/doctors/doctors-3.jpg')}}" class="img-fluid" alt=""></div>
+                                            <div class="member-info">
+                                                <h4>William Anderson</h4>
+                                                <span>Cardiology</span>
+                                                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                                                <div class="social">
+                                                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                                    <a href=""> <i class="bi bi-linkedin"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- End Team Member -->
+
+                                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                                        <div class="team-member d-flex align-items-start">
+                                            <div class="pic"><img src="{{asset('img/doctors/doctors-4.jpg')}}" class="img-fluid" alt=""></div>
+                                            <div class="member-info">
+                                                <h4>Amanda Jepson</h4>
+                                                <span>Neurosurgeon</span>
+                                                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                                                <div class="social">
+                                                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                                    <a href=""> <i class="bi bi-linkedin"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- End Team Member -->
+
                                 </div>
-                            </div>
-                        </div>
-                    </div><!-- End Team Member -->
 
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="team-member d-flex align-items-start">
-                            <div class="pic"><img src="{{asset('img/doctors/doctors-3.jpg')}}" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>William Anderson</h4>
-                                <span>Cardiology</span>
-                                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""> <i class="bi bi-linkedin"></i> </a>
-                                </div>
                             </div>
-                        </div>
-                    </div><!-- End Team Member -->
+                        </div><!-- End testimonial item -->
 
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-                        <div class="team-member d-flex align-items-start">
-                            <div class="pic"><img src="{{asset('img/doctors/doctors-4.jpg')}}" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>Amanda Jepson</h4>
-                                <span>Neurosurgeon</span>
-                                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""> <i class="bi bi-linkedin"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- End Team Member -->
-
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
+                <!-- fin de transiscion -->
+
+
 
             </div>
 
@@ -1134,7 +1201,7 @@
 
     </footer>
 
-    <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+    <a href="https://wa.me/51905431945" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
 
 
 

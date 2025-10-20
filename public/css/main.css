@@ -1828,3 +1828,9 @@ section,
   max-width: 400px;
   margin: 0 auto;
 }
+.blur-bg {
+  background: rgba(255, 255, 255, 0.3); /* fondo translúcido */
+  backdrop-filter: blur(3px);            /* compatibilidad Safari */
+  border-radius: 20px;                    /* bordes redondeados */
+  padding: 20px;
+}
